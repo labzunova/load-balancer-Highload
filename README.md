@@ -4,10 +4,13 @@
 - 18.188.170.28:5000 (local 172.31.39.47:5000)
 - 18.190.157.246:5000 (local 172.31.40.212:5000)
 - 18.117.114.211:5000 (local 172.31.37.48:5000)
+### Database
+- 3.22.112.0:5432 (local 172.31.38.13:5432)
 ### Balancer  
 - 52.14.226.109 (local 172.31.36.152)
 
 ### RPS & CPU, load applied:
+ab -n 10000 -c 10 http://52.14.226.109/api/user/l.sparrow/profile
 ![alt load](img/started.png)
 
 ### RPS & CPU, one backend is disabled at 16:53:30:
@@ -32,3 +35,6 @@ https://serveradmin.ru/ustanovka-i-nastrojka-nginx/#i-4
 
 - Nginx balancer:  
 https://serveradmin.ru/nginx-v-kachestve-balansirovshhika-nagruzki/
+
+- Golang version updating:
+https://www.jajaldoang.com/post/how-to-update-golang/
